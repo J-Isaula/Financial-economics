@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Economía financiera</title>
-  <meta name="description" content="Page not found | Economía financiera" />
+  <title> 5 El Precio de un Bono | Economía financiera</title>
+  <meta name="description" content=" 5 El Precio de un Bono | Economía financiera" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Economía financiera" />
+  <meta property="og:title" content=" 5 El Precio de un Bono | Economía financiera" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Economía financiera" />
+  <meta name="twitter:title" content=" 5 El Precio de un Bono | Economía financiera" />
   
   
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="bonos.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -165,18 +165,62 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="el-precio-de-un-bono" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number"> 5</span> El Precio de un Bono<a href="el-precio-de-un-bono.html#el-precio-de-un-bono" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Los pasos a seguir para estimar el precio de un instrumento financiero, como son los BONOS serían los siguientes:</p>
+<ul>
+<li><p>Se debe estimar los <code>flujos de efectivo</code> que reportará el instrumento. En este caso, los flujos que veríamos serían los pagos periódicos de intereses (Flujo de cupones) y el pago del valor nominal del instrumento a <code>VALOR PAR (100%)</code> en la fecha de vencimiento del valor.</p></li>
+<li><p>Se debe estimar la tasa de descuento apropiada, la cual debe reflejar el rendimiento de bonos de características similares, tal como fecha de vencimiento, pago de cupones, riesgo crédito, etc.</p></li>
+</ul>
+<p>En otras palabras, el tenedor de un instrumento financiero buscará un instrumento similar en el mercado a fin de verificar la competitividad que pueda tener su instrumento al momento de tomar decisiones de comprar o vender el mismo.</p>
+<p>En general, el precio del bono será igual a la suma del valor presente de todos los cupones más el valor presente del valor par del instrumento al vencimiento, esto es,</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+P &amp;=&amp; \frac{C}{(1+r)} + \frac{C}{(1+r)^2} + . . . + \frac{C}{(1+r)^n} + \frac{M}{(1+r)^n}\\[0.5cm]
+  &amp;=&amp; C\frac{1 - (1+r)^{-n}}{r} + \frac{M}{(1+r)^n}
+\end{eqnarray}
+\]</span>
+donde,</p>
+<ul>
+<li><span class="math inline">\(C\)</span> es el pago de cupón (efectivo)</li>
+<li><span class="math inline">\(n\)</span> es el número de períodos</li>
+<li><span class="math inline">\(r\)</span> tasa interés periódica</li>
+</ul>
+<p>Para calcular el valor presente del valor par, se utiliza la siguiente formula:</p>
+<p><span class="math display">\[\frac{M}{(1+r)^n}\]</span>
+<span class="math inline">\(M\)</span> valor par del instrumento
+<span class="math inline">\(n\)</span> número de periodos
+<span class="math inline">\(r\)</span> tasa de interés periódica</p>
+<div id="ejemplo" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Ejemplo<a href="el-precio-de-un-bono.html#ejemplo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Si tenemos un bono de 1,000,000.00 con un vencimiento de 4 años, el cual paga intereses cada tres meses a una tasa de 10% anual. ¿Cuál será el precio del instrumento al momento de ser emitido?</p>
+<p><span class="math display">\[\mbox{Solución}\]</span>
+Primero calcularemos el <code>Valor Presente del Flujo de Cupones</code>:</p>
+<p>Cada cupón paga (10% en 12 meses) * 3 meses, lo equivalente a 2.5%. Este porcentaje al multiplicar por valor par del instrumento nos resulta 25,000. Por tanto, en nuestra fórmula:</p>
+<p><span class="math inline">\(C = 25,000\)</span></p>
+<p><span class="math inline">\(n = 16\)</span> ya que cada año tiene 4 trimestres y si el instrumento tiene un vigencia de 4 años, se realizarían 16 pagos de intereses durante los cuatro años respectivos.</p>
+<p><span class="math inline">\(r = 2.5\%\)</span>, ya que si la tasa es 10% anual, esta se divide entre cuatro (trimestres).</p>
+<p><span class="math display">\[P = 25,000\cdot \frac{1- (1+0.025)^{-16}}{0.025} + \frac{1,000,000}{(1+0.025)^{16}} =\fbox{1,000,000.00}\]</span></p>
+<p>como pudimos observar, los cálculos realizados dan efectivamente el valor nominal del instrumento. Ahora bien, si al momento de tomar la decisión de vender, las tasa de interés de los otros instrumentos con similares características fuesen iguales a la de nuestro instrumento, el titulo valor podría venderse al 100% de su valor, o lo que es lo mismo a su valor par.</p>
+<p>Ahora bien, al momento de comprar o vender un instrumento financiero como son los bonos, debemos tener en consideración que todo instrumento dentro del mercado de capitales se encontrará compitiendo con otros tipos de instrumentos que pudieran ser más atractivos para el inversionista; en lo cual debería observarse o compararse aspectos como: las variaciones en las tasas de interés, el periodo de vigencia del instrumento, la demanda y oferta sobre los instrumentos entre si, etc.</p>
+<p>Para ilustrar un poco más los factores que intervienen en el precio de un instrumento financiero al momento de valorarlo, tomaremos del ejemplo anterior y, asumiendo que existen en el mercado de capitales instrumentos similares que estuviesen ofreciendo una tasa de interés atractiva a la del bono en cuestión, tendremos:</p>
+<p><span class="math inline">\(M = 1,000,000\)</span></p>
+<p><span class="math inline">\(n = 16\)</span> trimestres</p>
+<p><span class="math inline">\(r = 10\%\)</span> anual ó <span class="math inline">\(2.5\%\)</span> trimestral</p>
+<p><span class="math inline">\(C = 25,000\)</span></p>
+<p><span class="math inline">\(R = 12\%\)</span> anual ó <span class="math inline">\(3\%\)</span> trimestral (Esta sería la tasa de interes presente en el mercado que estaría en competencia con la del bono en cuestión)</p>
+<p>Para determinar cual sería el precio de nuestro instrumento, a fin de ser competitivo frente al mercado, debemos sustituir la tasa de 2.5% en nuestra fórmula por la del 3% que se encuentra en el mercado. Bajo esta condición tendríamos el siguiente resultado:</p>
+<p><span class="math display">\[P = 25,000\cdot \frac{1- (1+0.030)^{-16}}{0.030} + \frac{1,000,000}{(1+0.030)^{16}} = \fbox{937,194.49}\]</span></p>
+<p>Por lo tanto, bajo estas condiciones para que nuestro instrumento sea atractivo, <code>el precio de venta debería ser 937,719%</code> aproximadamente. En otras palabras, el instrumento debería ser vendido con un precio a descuento; considerando la tasa más alta que estarían pagando otros tipos de instrumentos en el mercado.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="bonos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -208,7 +252,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
 "text": "Edit"
 },
 "history": {
