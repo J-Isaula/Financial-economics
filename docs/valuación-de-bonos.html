@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 4 Bonos | Economía financiera</title>
-  <meta name="description" content=" 4 Bonos | Economía financiera" />
+  <title> 6 Valuación de Bonos | Economía financiera</title>
+  <meta name="description" content=" 6 Valuación de Bonos | Economía financiera" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 4 Bonos | Economía financiera" />
+  <meta property="og:title" content=" 6 Valuación de Bonos | Economía financiera" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 4 Bonos | Economía financiera" />
+  <meta name="twitter:title" content=" 6 Valuación de Bonos | Economía financiera" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="elementos-de-las-inversiones.html"/>
-<link rel="next" href="el-precio-de-un-bono.html"/>
+<link rel="prev" href="el-precio-de-un-bono.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -175,148 +175,270 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="bonos" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number"> 4</span> Bonos<a href="bonos.html#bonos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Un bono constituye el principal representante de los intrumentos de renta fija. Un bono es un instrumento en el cual el emisor (deudor/prestatario) promete pagar al prestamista/inversionista, la cantidad prestada más cierto monto de intereses durante un período, donde la tasa de interés y el lapso se encuentran normalmente previamente especificado y por lo tanto son de mutua aceptación.</p>
-<div id="características-de-los-bonos" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Características de los Bonos<a href="bonos.html#características-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Fecha de vencimiento</li>
-<li>Tipo de interés</li>
-<li>periocidad de los cupones</li>
-<li>precios de emisió y amortización</li>
-<li>clausulas de la amortización y otras condiciones de emisión</li>
-<li>garantías ofrecidas</li>
-</ul>
-<p>Por lo general, los bonos son emitidos por diversas agencias gubernamentales o por corporaciones privadas de gran capacidad financiera.</p>
-<p>Cuando un gobierno o empresa desea emitir bonos, utiliza la banca de inversión quien se encargará de estructurar la emisión y colocarla en el público (oferta en el mercado primario):</p>
-<ol style="list-style-type: decimal">
-<li><p>gobiernos internacionales, corporaciones, casas de bolsa, bancos, fondos de inversión y particulares.</p></li>
-<li><p>Mercados secundario: donde los compradores de estos bonos también los puedan vender en un futuro y en cualquier momento, proveyéndolos de liquidez, característica principal que buscan los inversionistas en cualquier activo financiero.</p></li>
-</ol>
+<div id="valuación-de-bonos" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number"> 6</span> Valuación de Bonos<a href="valuación-de-bonos.html#valuación-de-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="precios-de-los-bonos-inmediatamente-después-del-pago-de-un-cupón" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Precios de los bonos inmediatamente después del pago de un cupón<a href="valuación-de-bonos.html#precios-de-los-bonos-inmediatamente-después-del-pago-de-un-cupón" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="29%" />
+<col width="23%" />
+<col width="23%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cuando precio bono es…</th>
+<th><span class="math inline">\(&gt;\)</span> valor nominal</th>
+<th><span class="math inline">\(=\)</span> valor nominal</th>
+<th><span class="math inline">\(&lt;\)</span> valor nominal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>El bono se negocia</td>
+<td>por arriba de par o con premio</td>
+<td>a la par</td>
+<td>por debajo de la par o con descuento</td>
+</tr>
+<tr class="even">
+<td>Esto ocurre cuando</td>
+<td>Tasa del cupón &gt; Rendimiento al vencimiento</td>
+<td>Tasa del cupón = Rendimiento al vencimiento</td>
+<td>Tasa del cupó &lt; Rendimiento del vencimiento</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="variables-a-considerar-para-la-inversión-en-bonos" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Variables a considerar para la inversión en Bonos<a href="bonos.html#variables-a-considerar-para-la-inversión-en-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="determinación-del-descuento-o-premio-de-un-bono" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Determinación del descuento o premio de un bono<a href="valuación-de-bonos.html#determinación-del-descuento-o-premio-de-un-bono" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Considere tres bonos a 30 años con pagos anuales de cupón. Un bono tiene una tasa cupón de 10%, otro de 5% y el último de 3%. Si el rendimiento al vencimiento de los tres bonos es de 5%. ¿Cuál es el precio de cada uno para un valor nominal de $100? ¿Cuál bono se comercia con premio,cual con descuento y cual a la par?</p>
+<p><span class="math display">\[\mbox{Solución}\]</span></p>
 <ul>
-<li>Maduración</li>
-<li>periocidad de los intereses</li>
-<li>tasa de interés que influye sobre el monto de la renta recibida</li>
-<li>precio</li>
-<li>rendimiento</li>
-<li>etc</li>
-</ul>
-<p>Todos estos aspectos ayudan a un inversionista a determinar el tipo de bono que puede colmar su expectativas y necesidades de acuerdo a los objetivos buscados.</p>
-<p>Entre los principales aspectos se deben tomar en cuenta los siguientes:</p>
-<ul>
-<li><p><strong>Tasa de interés</strong> los intereses que pagan los bonos pueden ser fijos o variable (unidos a un índice como la DFT, LIBOR etc).</p></li>
-<li><p><strong>Periodo de tiempo</strong> para su pago también es diferente, pueden ser pagaderos mensualmente, trimestralmente, semestralmente o anualmente, siendo estas las formas de pago más comunes.</p></li>
-<li><p><strong>Precio</strong> El precio que paga por un bono esta basado en un conjunto de variables, incuyendo:</p>
-<ul>
-<li>tasas de interés</li>
-<li>oferta y demanda</li>
-<li>calidad de crédito</li>
-<li>maduración e impuestos</li>
-</ul></li>
-</ul>
-</div>
-<div id="cálculo-del-precio-de-los-bonos" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Cálculo del precio de los bonos<a href="bonos.html#cálculo-del-precio-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>El precio de cualquier instrumento financiero debe ser igual al valor presente de sus flujos de efectivo esperados, descontados a una tasa de interés que refleje apropiadamente el riesgo asumido.
-<span class="math display">\[P = \frac{Fc_{i}}{(1+i)} + \frac{Fc_i}{(1+i)^2} + . . . + \frac{Fc_i}{(1+i)^n} + \frac{F}{(1+i)^n}\]</span></p>
-<p>donde,</p>
-<ul>
-<li><span class="math inline">\(P\)</span> precio del bono</li>
-<li><span class="math inline">\(F\)</span> valor nominal a la par del bono</li>
-<li><span class="math inline">\(Fc_i\)</span> pago del cupón</li>
-<li><span class="math inline">\(n\)</span> número de periodos</li>
-<li><span class="math inline">\(i\)</span> tasa de rendimiento por periodo de interes</li>
-</ul>
-<p>Una propiedad fundamental de los bonos, independientemente de su plazo, es que el precio cambia en la dirección opuesta a los cambios en las tasas de interés. Esto es debido a que el precio del bono debe ser el valor presente del mismo y por lo tanto al aumentar las tasas de descuento requeridas, entonces el valor presente disminuye y el precio también. Sin embargo, los bonos de largo plazo son mucho más sensibles a los cambios en la tasa de interés que los bonos de corto plazo.</p>
-<div id="razones-que-explican-el-cambio-del-precio-de-los-bonos" class="section level3 hasAnchor" number="4.3.1">
-<h3><span class="header-section-number">4.3.1</span> Razones que explican el cambio del precio de los bonos<a href="bonos.html#razones-que-explican-el-cambio-del-precio-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><p>cambios en las tasas requeridas de rendimiento, debido a un cambio en la calidad del riesgo de crédito del emisor del bono.</p></li>
-<li><p>Cambios en la tasas requeridas de rendimiento, debido a cambios en los rendimientos ofrecidos por bonos comparables.</p></li>
-<li><p>El bono se vende a descuento o con prima, por lo tanto al acercarse al vencimiento el precio se modificará hasta alcanzar el valor par.</p></li>
+<li><p><span class="math inline">\(P(cupon~10\%) = 10\times \frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$176.86\)</span> (se negocia con premio)</p></li>
+<li><p><span class="math inline">\(P(cupon~5\%) = 5\times\frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$100.00\)</span> (se negocia a la par)</p></li>
+<li><p><span class="math inline">\(P(cupon~3\%) = 3 \times \frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$69.26\)</span> (se negocia con descuento)</p></li>
 </ul>
 </div>
-<div id="aspectos-que-afectan-el-precio-de-los-bonos" class="section level3 hasAnchor" number="4.3.2">
-<h3><span class="header-section-number">4.3.2</span> Aspectos que afectan el precio de los bonos<a href="bonos.html#aspectos-que-afectan-el-precio-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="efecto-del-tiempo-sobre-los-precios-de-los-bonos" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Efecto del tiempo sobre los precios de los bonos<a href="valuación-de-bonos.html#efecto-del-tiempo-sobre-los-precios-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="fig1.png" /></p>
 <ul>
-<li><p><strong>Tasas tributarias e impuesto</strong> a la hora de valorar el rendimiento de las emisiones de renta fija, los inversores deberán tener en cuenta los diferentes tratamientos fiscales que puedan llevar incorporadas.</p></li>
-<li><p><strong>Liquidez</strong> Se refiere a la posibilidad que tiene un inversor de vender su inversión lo más rápidamente posible sin que tenga que aceptar una sensible rebaja del precio de la misma. Por lo general, cuánto mayor sea la liquidez de un bono, más bajo será su rendimiento, siempre que las demás variables se mantengan constantes.</p></li>
-<li><p><strong>Calidad del crédito</strong> se refiere al grado de inversión que tengan los bonos así como su calificación para la inversión. Estas calificaciones van desde AAA (que es la mas alta) hasta BBB y así sucesivamente determinando la calidad del emisor. Estas calificasiones reflejan el <code>riesgo por incumplimiento</code>, que se refiere a la probabilidad de que el emisor de un bono sea incapaz de hacer los pagos principales o intereses al momento en que se requiera.</p></li>
-<li><p><strong>Riesgo de interés</strong> los tipos de interés de los mercados varían constantemente, lo que afecta directamente al precio intrínseco de los instrumentos de renta fija. Cuando los tipos de interés suben, el precio nominal de una obligación desciende, lo que ocasiona una potencial pérdida a su tenedor.</p></li>
-<li><p><strong>Riesgo de reinversión</strong> Consiste en que las cantidades invertidas en bonos que tienen un plazo de vida corto, deberán ser reinvertidas cada poco tiempo a tipos de interés presumiblemente distintos, con los que sus flujos de caja irán cambiando conforme transcurre el tiempo, pudiendo afectar el rendimiento de las inversiones realizadas con un mismo capital.</p></li>
-<li><p><strong>Riesgo de cambio</strong> Hace referencia a la variación producida en los tipo de cambio cuando un inversor adquiere bonos denominados en una moneda distinta a la de su país de residencia.</p></li>
-<li><p><strong>Riesgo de inflación</strong> Surge debido a las variaciones en el poder adquisitivo de los flujos de caja producidos por efecto de la inflación, y por lo tanto, en los valores reales de inversión.</p></li>
-</ul>
-<p>Es de hacer notar que un inversionista está expuesto a muchas clases de riesgo cuando invierte en instrumentos de renta fija y variable, y debe tomar en cuenta múltiples factores a la hora de tomar decisiones respecto a la colocación de su capital.</p>
-</div>
-<div id="maduración" class="section level3 hasAnchor" number="4.3.3">
-<h3><span class="header-section-number">4.3.3</span> Maduración<a href="bonos.html#maduración" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>La maduración de un bono se refiere a la fecha en la cual el capital será pagado. La maduración de un bono maneja un rango entre un día y 30 años.</p>
-</div>
-<div id="rendimiento-yied" class="section level3 hasAnchor" number="4.3.4">
-<h3><span class="header-section-number">4.3.4</span> Rendimiento (yied)<a href="bonos.html#rendimiento-yied" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>La tasa <code>yield</code> es la tasa de retorno que se obtiene del bono basado en el precio que se pago y el pago de intereses que se reciben. Hay básicamente dos tipos de yield para los bonos:</p>
-<ul>
-<li><p><code>rendimiento ordinario</code> es el flujo de dinero en intereses que percibe un inversionista sobre el capital pagado por el bono, y se obtiene de dividir el pago de los intereses del bono y su precio de compra</p></li>
-<li><p><code>rendimiento de maduración</code> esta tasa de rendimiento es aquella tasa de interes que iguala el valor presente de la serie de flujos de efectivo del bono al precio del instrumento, que son aquellos que se obtendrían asumiendo que el inversor mantiene el bono hasta su vencimiento.</p></li>
-</ul>
-<p>El rendimiento al vencimiento considera: El cupón del bono, las ganancias o pérdidas de capital y el valor del dinero en el tiempo.</p>
-</div>
-</div>
-<div id="clasificación-de-los-bonos" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Clasificación de los Bonos<a href="bonos.html#clasificación-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="caracter-público-o-privado-del-emisor" class="section level3 hasAnchor" number="4.4.1">
-<h3><span class="header-section-number">4.4.1</span> Caracter público o privado del emisor<a href="bonos.html#caracter-público-o-privado-del-emisor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Especificamente en relación con esto, el desarrollo global del mercado de bonos se atribuye principalmente a las ofertas de los mismos por parte de los gobiernos de diferentes países. En general, los bonos emitidos por los gobiernos extranjeros (cpnocidos como <code>Bonos Soberanos</code>), son atractivos para los inversionistas en razón de la supuesta capacidad estata para cumplir con sus obligaciones.</p>
-<p>También existen dentro de las emisiones públicas, los bonos emitidos por las provincias o bonos provinciales, por municipios, y por otros entes públicos.</p>
-<p>Y por último existen los bonos emitidos por entidades financieras y los bonos corporativos (emitidos por las empresas privadas), a los cuales se denomina deuda privada.</p>
-</div>
-<div id="garantía-o-no-de-las-emisiones-es-decir-por-la-tranferencia-o-no-de-activos-específicos-que-respalden-una-emisión-determinada.-en-ese-sentido-los-bonos-se-pueden-clasificar-en" class="section level3 hasAnchor" number="4.4.2">
-<h3><span class="header-section-number">4.4.2</span> Garantía o no de las emisiones, es decir por la tranferencia o no de activos específicos que respalden una emisión determinada. En ese sentido los bonos se pueden clasificar en:<a href="bonos.html#garantía-o-no-de-las-emisiones-es-decir-por-la-tranferencia-o-no-de-activos-específicos-que-respalden-una-emisión-determinada.-en-ese-sentido-los-bonos-se-pueden-clasificar-en" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><strong>Bonos sin garantía</strong> se emiten sin la ignoración de ningún tipo específico de bien, entonces estos representan un derecho sobre las utilidades, pero no de sus activos.</li>
-</ul>
-<p>Tipos de bonos sin garantía:</p>
-<ul>
-<li><p><code>Títulos de crédito</code> Los títulos de crédito tienen derechos sobre cualquier parte de los activos de la empresa una vez que se hayan satisfecho las reclamaciones de todos los acreedores garantizados.</p></li>
-<li><p><code>Títulos de crédito subordinado</code> Son títulos de crédito que se subordinan específicamente a otros tipos de deuda. Tienen como ventaja que sus reclamaciones deben satisfacerse antes que la de los accionistas preferentes y comunes.</p></li>
+<li><p>La gráfica ilustra los efectos del paso del tiempo sobre los precios de los bonos cuando el rendimiento permanece constante.</p></li>
+<li><p>El precio de un bono cupón cero se eleva despacio.</p></li>
+<li><p>El precio de bono cuponado también aumenta entre los pagos de un cupón pero se derrumba en la fecha en que se paga uno, lo que refleja la cantidad del pago.</p></li>
+<li><p>Por cada cupón del bono, la línea gris continua (junto a las líneas dentadas) representa la tendencia del precio del bono justo después de que se paga cada cupón.</p></li>
 </ul>
 </div>
-<div id="en-función-a-su-estructura-los-bonos-se-pueden-clasificar-en" class="section level3 hasAnchor" number="4.4.3">
-<h3><span class="header-section-number">4.4.3</span> En función a su Estructura los bonos se pueden clasificar en:<a href="bonos.html#en-función-a-su-estructura-los-bonos-se-pueden-clasificar-en" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li><p><code>Bonos a tasa fija</code> la tasa de interés está prefijada y es igual para toda la vida del bono.</p></li>
-<li><p><code>Bonos con tasa variable</code> la tasa de interés que paga en cada cupón es distinta ya que está indexada con relación a una tasa de interés de referencia como puede ser la Libor.</p></li>
-<li><p><code>Bonos con opciones incorporadas</code> son bonos que incluyen opciones especiales como pueden ser:</p></li>
-</ol>
+<div id="la-sensibilidad-de-los-bonos-a-la-tasa-de-interés" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> La sensibilidad de los bonos a la tasa de interés<a href="valuación-de-bonos.html#la-sensibilidad-de-los-bonos-a-la-tasa-de-interés" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Consideremos el siguiente problema:</p>
+<p>Considere un bono cupón cero a 15 años y un bono cuponado a 30 años con cupones del 10% anual. ¿En qué porcentaje cambia el precio de cada uno si su rendimiento al vencimiento aumenta de 5% a 6%?</p>
+<p><span class="math display">\[\mbox{Solución}\]</span></p>
+<p>En primer lugar se calcula el precio de cada bono para cada rendimiento al vencimiento:</p>
+<table>
+<colgroup>
+<col width="35%" />
+<col width="39%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Rendimiento al vencimiento</th>
+<th>Bono cupón cero, a 15 años</th>
+<th>Bono cupón al 10% anual, a 30 años</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5%</td>
+<td><span class="math inline">\(\frac{100}{1.05^{15}} = \$48.10\)</span></td>
+<td><span class="math inline">\(10\times \frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$176.86\)</span></td>
+</tr>
+<tr class="even">
+<td>6%</td>
+<td><span class="math inline">\(\frac{100}{1.06^{15}} = \$41.73\)</span></td>
+<td><span class="math inline">\(10\times \frac{1}{0.06}\left(\begin{array}{c}1 - \frac{1}{1.06^{30}}\end{array}\right) + \frac{100}{1.06^{30}} = \$155.06\)</span></td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>Bonos canjeables: Estos bonos son producto intermedio entre las acciones y los bonos. A diferencia de los bonos convertibles, en los canjeables los bonos se cambian por acciones viejas, es decir ya en circulación y con todos los derechos económicos.</li>
+<li><p>El precio del bono cuponado a 15 años cambia en
+<span class="math display">\[\frac{41.73 - 48.10}{48.10} = -13.2\%\]</span>
+si su rendimiento al vencimiento se incrementa de 5% a 6%.</p></li>
+<li><p>Para el bono a 30 años con cupones del 10% anual, el cambio en el precio es
+<span class="math display">\[\frac{155.06 - 176.86}{176.86} = -12.3\]</span></p></li>
 </ul>
 </div>
-<div id="por-la-programación-de-los-pagos-los-bonos-pueden-ser" class="section level3 hasAnchor" number="4.4.4">
-<h3><span class="header-section-number">4.4.4</span> Por la programación de los pagos, los bonos pueden ser:<a href="bonos.html#por-la-programación-de-los-pagos-los-bonos-pueden-ser" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li><p><code>Bonos cupón cero</code> no existen pagos periódicos, por lo que el capital se paga al vencimiento y no pagan intereses.</p></li>
-<li><p><code>Bonos de cupones</code> pagan un monto fijo de interés con una periocidad previamente determinanda, y el capital del préstamo (o valor nominal) a su vencimiento.</p></li>
-</ol>
+<div id="rendimientos-y-precios-para-un-bono-nominal-de-1000-de-bonos-cupón-cero" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Rendimientos y precios (para un bono nominal de $1000) de bonos cupón cero<a href="valuación-de-bonos.html#rendimientos-y-precios-para-un-bono-nominal-de-1000-de-bonos-cupón-cero" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Vencimiento</strong></th>
+<th><strong>1 año</strong></th>
+<th><strong>2 años</strong></th>
+<th><strong>3 años</strong></th>
+<th><strong>4 años</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>RAV</strong></td>
+<td>3.50%</td>
+<td>4.00%</td>
+<td>4.50%</td>
+<td>4.75%</td>
+</tr>
+<tr class="even">
+<td><strong>Precio</strong></td>
+<td>$96.62</td>
+<td>$92.45</td>
+<td>$87.63</td>
+<td>$83.06</td>
+</tr>
+</tbody>
+</table>
+<p>Para ilustrarlo, en la siguiente tabla se muestran los rendimientos y precios de un bono cupón cero actua. Se calcula el costo del portafolio del bono cupón cero que replica al bono cupón a tres años, como sigue:</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="48%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Bono cupón cero</strong></th>
+<th><strong>Valor nominal requerido</strong></th>
+<th><strong>Costo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 año</td>
+<td>100</td>
+<td>96.62</td>
+</tr>
+<tr class="even">
+<td>2 años</td>
+<td>100</td>
+<td>92.45</td>
+</tr>
+<tr class="odd">
+<td>3 años</td>
+<td>1100</td>
+<td>11 x 87.63 = 963.93</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>costo total = $1153.00</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="los-bonos-se-diferencian-función-del-lugar-donde-los-bonos-fueron-vendidos" class="section level3 hasAnchor" number="4.4.5">
-<h3><span class="header-section-number">4.4.5</span> Los bonos se diferencian función del lugar donde los bonos fueron vendidos<a href="bonos.html#los-bonos-se-diferencian-función-del-lugar-donde-los-bonos-fueron-vendidos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li><p><code>Mercado nacional</code> son bonos emitidos dentro del país emisor y en la moneda de uso corriente de dicha región.</p></li>
-<li><p><code>Mercado internacional</code> son bonos emitidos en una moneda determinada pero colocados fuera del país emisor, por lo que son emisiones internacionales de obligaciones que se dividen en:</p></li>
-</ol>
-<ul>
-<li>Obligaciones Internacionales Simples (OIS)</li>
-<li>Los eurobonos, que es el instrumento que desarrollaremos en el resto del trabajo</li>
-</ul>
-<p>La primera característica fundamental de los <code>Eurobonos</code> es que se refieren a emisiones de carácter internacional, pero se diferencia de las <code>OIS</code> en que se emiten bajo diferentes acuerdos institucionales y que tienen diferentes consecuencias desde la perspectiva de inversores y emisores.</p>
-<p>Las <code>OIS</code> se caracterizan por ser emitidas por un prestatario no residente en el país, son suscritas por un sindicato bancario cuyos miembros pertenecen al país donde se recaban los fondos, son denominados en la moneda de ese mismo país y son vendidos en su totalidad dentro del mismo territorio.</p>
+<div id="rendimientos-para-vencimientos-diferentes" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Rendimientos para vencimientos diferentes<a href="valuación-de-bonos.html#rendimientos-para-vencimientos-diferentes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Suponga que los siguientes bonos cupón cero se comercian a los precios que se indican a continuación, por un valor nominal de $100. Determine el rendimiento al vencimiento que corresponde a cada bono.</p>
+<table>
+<thead>
+<tr class="header">
+<th>vencimiento</th>
+<th>1 año</th>
+<th>2 años</th>
+<th>3 años</th>
+<th>4 años</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Precio</td>
+<td>$96.62</td>
+<td>$92.45</td>
+<td>$87.63</td>
+<td>$83.06</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\mbox{Solución}\]</span></p>
+<p><span class="math display">\[
+\begin{eqnarray*}
+RAV_{1} &amp;=&amp; \left(\begin{array}{c}\frac{100}{96.62}\end{array}\right) -1 = 3.5\%\\[0.3cm]
+RAV_{2} &amp;=&amp; \left(\begin{array}{c}\frac{100}{92.45}\end{array}\right)^{1/2} - 1 = 4.00\%\\[0.3cm]
+RAV_{3} &amp;=&amp; \left(\begin{array}{c}\frac{100}{87.03}\end{array}\right)^{1/3} - 1 = 4.50\%\\[0.3cm]
+RAV_{4} &amp;=&amp; \left(\begin{array}{c}\frac{100}{83.06}\end{array}\right)^{1/4} - 1 = 4.75\%
+\end{eqnarray*}
+\]</span></p>
 </div>
+<div id="calificaciones-de-los-bonos" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Calificaciones de los bonos<a href="valuación-de-bonos.html#calificaciones-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Moody’s</th>
+<th>Standard &amp; Poor’s</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aaa</td>
+<td>AAA</td>
+<td>Se juzga como los de mejor calidad. Tienen el grado de riesgo más bajo de riesgo de inversión.</td>
+</tr>
+<tr class="even">
+<td>Aa</td>
+<td>AA</td>
+<td>Son de alta calidad según todos los estándare. Se les conoce como bonos de alto grado</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>A</td>
+<td>Poseen muchos atributos favorables a la inversión y se consideran como obligaciones de grado superior a medio</td>
+</tr>
+<tr class="even">
+<td>Baa</td>
+<td>BBB</td>
+<td>Se consideran obligaciones de grado medio (es decir, no están ni muy protegidos ni tal mal asegurados)</td>
+</tr>
+<tr class="odd">
+<td><strong>Bonos especulativos</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ba</td>
+<td>BB</td>
+<td>Se guzga que tienen elementos especulativos: no se considera que este bien asegurado su futuro. A los bonos de esta clase se les considera como bonos de una posición incierta</td>
+</tr>
+<tr class="odd">
+<td>B</td>
+<td>B</td>
+<td>Por lo general no tienen caracteristicas deseables de inversión. Es poca la seguridad de los pagos de interés y principal para el mantenimiento de otros términos del contrato para un periodo largo de tiempo.</td>
+</tr>
+<tr class="even">
+<td>Caa</td>
+<td>CCC</td>
+<td>Son de mal desempeño. Estas emisiones estan en incumplimiento o presentan elementos de peligro con respecto del principal o el interés</td>
+</tr>
+<tr class="odd">
+<td>Ca</td>
+<td>CC</td>
+<td>Son especulativos en alto grado. Con frecuencia, tales emisiones están en incumplimiento o tienen otras deficiencias marcadas</td>
+</tr>
+<tr class="even">
+<td>C</td>
+<td>C,D</td>
+<td>Son los bonos de la clase más baja</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
             </section>
@@ -324,8 +446,8 @@
           </div>
         </div>
       </div>
-<a href="elementos-de-las-inversiones.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="el-precio-de-un-bono.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="el-precio-de-un-bono.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

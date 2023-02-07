@@ -23,7 +23,7 @@
 <meta name="author" content="Juan Isaula" />
 
 
-<meta name="date" content="2023-02-05" />
+<meta name="date" content="2023-02-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="bonos.html"/>
-
+<link rel="next" href="valuación-de-bonos.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -143,7 +143,17 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="el-precio-de-un-bono.html"><a href="el-precio-de-un-bono.html"><i class="fa fa-check"></i><b>5</b> El Precio de un Bono</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="el-precio-de-un-bono.html"><a href="el-precio-de-un-bono.html#ejemplo"><i class="fa fa-check"></i><b>5.1</b> Ejemplo</a></li>
+<li class="chapter" data-level="5.1" data-path="el-precio-de-un-bono.html"><a href="el-precio-de-un-bono.html#ejemplos"><i class="fa fa-check"></i><b>5.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html"><i class="fa fa-check"></i><b>6</b> Valuación de Bonos</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#precios-de-los-bonos-inmediatamente-después-del-pago-de-un-cupón"><i class="fa fa-check"></i><b>6.1</b> Precios de los bonos inmediatamente después del pago de un cupón</a></li>
+<li class="chapter" data-level="6.2" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#determinación-del-descuento-o-premio-de-un-bono"><i class="fa fa-check"></i><b>6.2</b> Determinación del descuento o premio de un bono</a></li>
+<li class="chapter" data-level="6.3" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#efecto-del-tiempo-sobre-los-precios-de-los-bonos"><i class="fa fa-check"></i><b>6.3</b> Efecto del tiempo sobre los precios de los bonos</a></li>
+<li class="chapter" data-level="6.4" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#la-sensibilidad-de-los-bonos-a-la-tasa-de-interés"><i class="fa fa-check"></i><b>6.4</b> La sensibilidad de los bonos a la tasa de interés</a></li>
+<li class="chapter" data-level="6.5" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#rendimientos-y-precios-para-un-bono-nominal-de-1000-de-bonos-cupón-cero"><i class="fa fa-check"></i><b>6.5</b> Rendimientos y precios (para un bono nominal de $1000) de bonos cupón cero</a></li>
+<li class="chapter" data-level="6.6" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#rendimientos-para-vencimientos-diferentes"><i class="fa fa-check"></i><b>6.6</b> Rendimientos para vencimientos diferentes</a></li>
+<li class="chapter" data-level="6.7" data-path="valuación-de-bonos.html"><a href="valuación-de-bonos.html#calificaciones-de-los-bonos"><i class="fa fa-check"></i><b>6.7</b> Calificaciones de los bonos</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -191,8 +201,8 @@ donde,</p>
 <span class="math inline">\(M\)</span> valor par del instrumento
 <span class="math inline">\(n\)</span> número de periodos
 <span class="math inline">\(r\)</span> tasa de interés periódica</p>
-<div id="ejemplo" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Ejemplo<a href="el-precio-de-un-bono.html#ejemplo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ejemplos" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Ejemplos<a href="el-precio-de-un-bono.html#ejemplos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Si tenemos un bono de 1,000,000.00 con un vencimiento de 4 años, el cual paga intereses cada tres meses a una tasa de 10% anual. ¿Cuál será el precio del instrumento al momento de ser emitido?</p>
 <p><span class="math display">\[\mbox{Solución}\]</span>
 Primero calcularemos el <code>Valor Presente del Flujo de Cupones</code>:</p>
@@ -212,7 +222,20 @@ Primero calcularemos el <code>Valor Presente del Flujo de Cupones</code>:</p>
 <p>Para determinar cual sería el precio de nuestro instrumento, a fin de ser competitivo frente al mercado, debemos sustituir la tasa de 2.5% en nuestra fórmula por la del 3% que se encuentra en el mercado. Bajo esta condición tendríamos el siguiente resultado:</p>
 <p><span class="math display">\[P = 25,000\cdot \frac{1- (1+0.030)^{-16}}{0.030} + \frac{1,000,000}{(1+0.030)^{16}} = \fbox{937,194.49}\]</span></p>
 <p>Por lo tanto, bajo estas condiciones para que nuestro instrumento sea atractivo, <code>el precio de venta debería ser 937,719%</code> aproximadamente. En otras palabras, el instrumento debería ser vendido con un precio a descuento; considerando la tasa más alta que estarían pagando otros tipos de instrumentos en el mercado.</p>
-
+<p>Veamos otro ejemplo,</p>
+<p>Calcule el precio de un bono cupón, que paga cupones semestrales y la tasa de descuento es del 7% con un vencimiento de 5 años. El valor nominal del cupón es de 2000 lempiras. Y la tasa cupón es del 5%.</p>
+<p><span class="math display">\[\mbox{Solución}\]</span></p>
+<p>Primero necesitamos determinan <span class="math inline">\(C\)</span>, para ello note que
+<span class="math display">\[C = tasa~cupon\times VN = (0.05)(2000) = 100\]</span>
+donde <span class="math inline">\(VN:\)</span> es el valor nominal del cupón.</p>
+<p>Entonces,</p>
+<p><span class="math display">\[
+\begin{eqnarray*}
+P_{Bono} &amp;=&amp; \frac{C}{\frac{i}{m}}\left[\begin{array}{c}1 - \frac{1}{(1+\frac{i}{m})^{mn}}\end{array}\right] + \frac{VN}{(1+\frac{i}{m})^{nm}}\\[0.5cm]
+         &amp;=&amp; \frac{100}{\frac{0.07}{2}}\left[\begin{array}{c}1 - \frac{1}{(1+\frac{0.07}{2})^{10}}\end{array}\right] + \frac{2000}{(1+\frac{0.07}{2})^{10}}\\[0.5cm]
+         &amp;=&amp; \fbox{2,249.50}
+\end{eqnarray*}
+\]</span></p>
 </div>
 </div>
             </section>
@@ -220,8 +243,8 @@ Primero calcularemos el <code>Valor Presente del Flujo de Cupones</code>:</p>
           </div>
         </div>
       </div>
-<a href="bonos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="bonos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="valuación-de-bonos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
