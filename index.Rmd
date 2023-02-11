@@ -642,8 +642,13 @@ P_{Bono} &=& \frac{C}{\frac{i}{m}}\left[\begin{array}{c}1 - \frac{1}{(1+\frac{i}
 \end{eqnarray*}
 $$
 
+
 # Valuaciones de Bonos
 
 ## Precios de los bonos inmediatamente después del pago de un cupón 
 
 
+Cuando precio bono es... | $>$ valor nominal | $=$ valor nominal | $<$ valor nominal |
+| -----------------------| ------------------| ------------------|-------------------|
+|   El bono se negocia   | por arriba de par o con premio | a la par | por debajo de la par o con descuento |
+| Esto ocurre cuando     | Tasa del cupón > Rendimiento al vencimiento | Tasa del cupón = Rendimiento al vencimiento | Tasa del cupó < Rendimiento del vencimiento | 
