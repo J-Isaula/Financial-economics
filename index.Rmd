@@ -741,3 +741,19 @@ RAV_{3} &=& \left(\begin{array}{c}\frac{100}{87.03}\end{array}\right)^{1/3} - 1 
 RAV_{4} &=& \left(\begin{array}{c}\frac{100}{83.06}\end{array}\right)^{1/4} - 1 = 4.75\%
 \end{eqnarray*}
 $$
+
+
+## Calificaciones de los bonos
+
+|     Moody's     |Standard & Poor's|   Descripción   |
+| --------------- | --------------- | --------------- | 
+|        Aaa      |        AAA      | Se juzga como los de mejor calidad. Tienen el grado de riesgo más bajo de riesgo de inversión. |
+|         Aa      |         AA      |  Son de alta calidad  según todos los estándare. Se les conoce como bonos de alto grado| 
+|          A      |          A      | Poseen muchos atributos favorables a la inversión y se consideran como obligaciones de grado superior a medio|
+|        Baa      |         BBB     |   Se consideran obligaciones de grado medio (es decir, no están ni muy protegidos ni tal mal asegurados)|
+| **Bonos especulativos** |              |            | 
+|            Ba           |       BB     |   Se guzga que tienen elementos  especulativos: no se considera que este bien asegurado su futuro. A los bonos de esta clase se les considera  como bonos de una posición incierta | 
+|              B          |        B      |      Por lo general no tienen caracteristicas deseables de inversión. Es poca la seguridad de los pagos  de interés y principal para el mantenimiento de otros términos del contrato para un periodo largo de tiempo. 
+|             Caa          |      CCC      | Son de mal desempeño.  Estas emisiones estan en incumplimiento o presentan elementos de peligro con respecto del principal o el interés | 
+|               Ca        |     CC |    Son especulativos en alto grado. Con frecuencia, tales emisiones están en incumplimiento o tienen  otras deficiencias marcadas| 
+| C        |      C,D     |  Son los bonos de la clase más baja|
