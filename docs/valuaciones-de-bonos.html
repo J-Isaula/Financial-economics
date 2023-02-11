@@ -148,6 +148,8 @@
 <li class="chapter" data-level="6" data-path="valuaciones-de-bonos.html"><a href="valuaciones-de-bonos.html"><i class="fa fa-check"></i><b>6</b> Valuaciones de Bonos</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="valuaciones-de-bonos.html"><a href="valuaciones-de-bonos.html#precios-de-los-bonos-inmediatamente-después-del-pago-de-un-cupón"><i class="fa fa-check"></i><b>6.1</b> Precios de los bonos inmediatamente después del pago de un cupón</a></li>
+<li class="chapter" data-level="6.2" data-path="valuaciones-de-bonos.html"><a href="valuaciones-de-bonos.html#determinación-del-descuento-o-premio-de-un-bono"><i class="fa fa-check"></i><b>6.2</b> Determinación del descuento o premio de un bono</a></li>
+<li class="chapter" data-level="6.3" data-path="valuaciones-de-bonos.html"><a href="valuaciones-de-bonos.html#efecto-del-tiempo-sobre-los-precios-de-los-bonos"><i class="fa fa-check"></i><b>6.3</b> Efecto del tiempo sobre los precios de los bonos</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -203,6 +205,26 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div id="determinación-del-descuento-o-premio-de-un-bono" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Determinación del descuento o premio de un bono<a href="valuaciones-de-bonos.html#determinación-del-descuento-o-premio-de-un-bono" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Considere tres bonos a 30 años con pagos anuales de cupón. Un bono tiene una tasa cupón de 10%, otro de 5% y el último de 3%. Si el rendimiento al vencimiento de los tres bonos es de 5%. ¿Cuál es el precio de cada uno para un valor nominal de $100? ¿Cuál bono se comercia con premio,cual con descuento y cual a la par?</p>
+<p><span class="math display">\[\mbox{Solución}\]</span></p>
+<ul>
+<li><p><span class="math inline">\(P(cupon~10\%) = 10\times \frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$176.86\)</span> (se negocia con premio)</p></li>
+<li><p><span class="math inline">\(P(cupon~5\%) = 5\times\frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$100.00\)</span> (se negocia a la par)</p></li>
+<li><p><span class="math inline">\(P(cupon~3\%) = 3 \times \frac{1}{0.05}\left(\begin{array}{c}1 - \frac{1}{1.05^{30}}\end{array}\right) + \frac{100}{1.05^{30}} = \$69.26\)</span> (se negocia con descuento)</p></li>
+</ul>
+</div>
+<div id="efecto-del-tiempo-sobre-los-precios-de-los-bonos" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Efecto del tiempo sobre los precios de los bonos<a href="valuaciones-de-bonos.html#efecto-del-tiempo-sobre-los-precios-de-los-bonos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="fig1.png" /></p>
+<ul>
+<li><p>La gráfica ilustra los efectos del paso del tiempo sobre los precios de los bonos cuando el rendimiento permanece constante.</p></li>
+<li><p>El precio de un bono cupón cero se eleva despacio.</p></li>
+<li><p>El precio de bono cuponado también aumenta entre los pagos de un cupón pero se derrumba en la fecha en que se paga uno, lo que refleja la cantidad del pago.</p></li>
+<li><p>Por cada cupón del bono, la línea gris continua (junto a las líneas dentadas) representa la tendencia del precio del bono justo después de que se paga cada cupón.</p></li>
+</ul>
 
 </div>
 </div>
